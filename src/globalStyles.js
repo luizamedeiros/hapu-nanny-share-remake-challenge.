@@ -28,13 +28,15 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.2vw;
         font-weight: 400;
         @media screen and (max-width: 768px){
-            font-size: 2.4vw;
-            text-align: inherit;
+            font-size: 3vw;
         }
     }
     a{
         text-decoration: underline;
         color: #5E20A4;
+        @media screen and (max-width: 768px){
+            font-size: 3vw;
+        }
     }
     div{
         background-position: center;

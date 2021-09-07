@@ -8,11 +8,24 @@ const SectionWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     height: 60vh;
+    @media screen and (max-width: 768px){
+        padding: 5vh 0 0 0;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+    }
     `
 const TextSection = styled.div`
     width: 40%;
     text-align: left;
     padding-right: 6vw;
+    @media screen and (max-width: 768px){
+        margin: 8vh 0vh 8vh 0vh;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
 `
 const SectionTitle = styled.h2`
     height: 10vh;
@@ -22,14 +35,26 @@ const SectionPitch = styled.p`
     width: 32vw;
     text-align: justify;
     margin-bottom: 5vh;
-    `
+    @media screen and (max-width: 768px){
+        width: 75%;
+        text-align: center;
+        margin: auto;
+        line-height: 200%;
+        padding-bottom: 5vh;
+    }
+`
 
 const ReadyToStartLink = styled.a`
     font-size: 1.2 vw;
+    padding: 10vh 0 10vh 0;
 `
 const StartImage = styled.img`
-    width: 55%;
+    width: 53%;
     margin: 0px;
+    @media screen and(max-width: 768px){
+        margin: 15vh 0vh 0vh 0vh;
+    }
+
 `
 
 const SecondSection = () =>{

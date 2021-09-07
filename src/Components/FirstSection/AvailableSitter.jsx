@@ -12,20 +12,23 @@ const CarrouselWrapper = styled.div`
         height: 20vh;
     }
     @media screen and (max-width: 768px){
-        height: 80vh;
+        height: 40vh;
+        flex-direction: column;
+        text-align: center;
     }
 `
 const ProfilePicture = styled.img`
     border-radius: 100%;
-    margin-right: 1rem;
+    margin: 0.5rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 `
 const SitterProfileLink = styled.a`
     font-weight: 500;
     color: #5E20A4;
-    margin-right: 1rem;
+    margin: 0.5rem;
     font-size: 1.2vw;
     @media screen and (max-width: 768px){
         font-size: 3vw;
