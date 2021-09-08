@@ -1,12 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
-import { TextField, Button } from '@material-ui/core';
 
 const SectionTitle = styled.h3`
 `
 const SectionSubtitle = styled.p`
 `
-const FormWrapper = styled.div`
+const FormWrapper = styled.form`
     display: flex;
     width: 100%;
     align-items: center;
@@ -34,7 +33,9 @@ const InputWrapper = styled.div`
     margin: 1.5vw;
 `
 
-const SignUpForm = () =>{
+function SignUpForm({onFormSubmit}){
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
     return(
         <>
         <SectionWrapper>
@@ -43,25 +44,38 @@ const SignUpForm = () =>{
                 Leave us your name and email and we'll update you as soon as 
                 a share becomes available in your area!
             </SectionSubtitle>
-            <FormWrapper>
-                <InputWrapper>
-                <TextField 
+            <FormWrapper
+            onSubmit={(e)=>{
+                e.preventDefault();
+                onFormSubmit({name, email});
+            }}
+            >
+            <input
+                value={name}
+                onChange={(e)=>{
+                    setName(e.target.value);
+                }} 
                 id="name"
                 name="name"
                 type="text"
-                multiline = {true}
                 variant="filled"
-                label="Your name"/>
-                </InputWrapper>
-                <InputWrapper>
-                <TextField
+                label="Your name"
+                required/>
+
+                <input
+                value={email}
+                onChange={(e)=>{
+                    setEmail(e.target.value);
+                }} 
                 id="email"
                 name="email"
                 type="email"
                 variant="filled"
-                label="Your email"/>
-                </InputWrapper>
-                <SendButton>Send</SendButton>
+                label="Your email"
+                required/>
+                <SendButton>
+                    Send
+                </SendButton>
             </FormWrapper>
         </SectionWrapper>
         </>
