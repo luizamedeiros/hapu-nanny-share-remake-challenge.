@@ -26,19 +26,12 @@ const ProfilePicture = styled.img`
 
 `
 const SitterProfileLink = styled.a`
-    font-weight: 500;
-    color: #5E20A4;
-    margin: 0.5rem;
-    font-size: 1.2vw;
-    @media screen and (max-width: 768px){
-        font-size: 3vw;
     `
-const SitterHours = styled.p`
-    font-size: 1.2vw;
-    font-weight: 500;
+const SitterHours = styled.h4`
     color: black;
     @media screen and (max-width: 768px){
         font-size: 3vw;
+        padding-bottom: 0;
 `
 const AvailableSitter = () => {
     return(

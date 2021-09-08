@@ -13,8 +13,8 @@ const Banner = styled.div`
 
 const MainDiv = styled.div`
     display: flex;
-    padding: 8%;
     color: white;
+    padding: 5%;
     justify-content: space-between;
     max-height: 50vh;
 `
@@ -22,29 +22,38 @@ const FirstColumn = styled.div`
     display: flex;
     position: relative;
     flex-direction: column;
-
-    @media screen and (max-width: 767px){
+    padding-bottom: 8%;
+    @media screen and (max-width: 768px){
         width: 100%;
-        justify-content: center;
-    }
-
-    @media screen and (min-width: 768px){
-        width:50%;
         justify-content: space-around;
         text-align: center;
+    }
+    @media screen and (min-width: 769px){
+        width:50%;
+        justify-content: space-between;
+
     }
 `
 const MainTitle = styled.h1`
     display:flex;
-    letter-spacing: -1px;
+    letter-spacing: 1px;
     text-align: justify;
     padding-top: 0.5vh;
+    color:inherit;
+    @media screen and (max-width: 768px){
+        text-align: inherit;
+    }
+
 `
 const Subtitle = styled.p`
     position: relative;
     display: flex;
     text-align: left;
     padding-bottom: 0.5vh;
+    color:inherit;
+    @media screen and (max-width: 768px){
+        text-align: inherit;
+    }
 `
 
 const HeaderImage = styled.img`

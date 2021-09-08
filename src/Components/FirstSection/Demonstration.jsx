@@ -2,24 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 import playbutton from '../../assets/images/Playbutton.png';
 
+
 const Demonstration = ()=>{
     const DemonstrationLink = styled.a`
-        font-size: 1.2vw;
-        letter-spacing: 0px;
-        margin-left: 3%;
         color: white;
-        @media screen and (max-width: 768px){
-            font-size: 3vw;
+        margin-left: 1.2%;
     `
     const DemonstrationWrapper = styled.div`
-        text-align: left;
         display: flex;
         align-items: center;
-        padding-bottom: 0.5vh;
+        margin: 2%;
         @media screen and (max-width: 768px){
-            text-align: center;
-            width: 70%;
-            margin: auto;
+            width: 100%;
+            justify-content: center;
         }
     `
     return(
