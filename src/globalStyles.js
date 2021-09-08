@@ -7,10 +7,11 @@ const GlobalStyle = createGlobalStyle`
         color: #3D3D3D;;
         font-weight: 500;
         text-align: inherit;
-        padding-bottom: 1.46vw;
+        margin-top: 1.46vw;
+        margin-bottom: 1.46vw;
         @media screen and (max-width: 768px){
-            padding-top: 0.7vw;
-            padding-bottom: 0.7vw;
+            margin-top: 0.7vw;
+            margin-bottom: 0.7vw;
         }
     }
     h1, h2, h3, h4, h5, h6{
@@ -37,7 +38,6 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.6vw;
         @media screen and (max-width: 768px){
             font-size: 4.6vw;   
-            line-height: 5vh;
         }
     }
     h4{
@@ -51,7 +51,6 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         text-align: inherit;
         line-height: 4.4vh;
-        padding-top: 1.46vw;
         @media screen and (max-width: 768px){
             font-size: 3vw;
             line-height: 200%;
@@ -62,7 +61,6 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: underline;
         color: #5E20A4;
         font-size: 1.17vw;
-        padding-top: 1.46vw;
         @media screen and (max-width: 768px){
             font-size: 3vw;
         }
@@ -86,7 +84,7 @@ const GlobalStyle = createGlobalStyle`
         }
     }
     section{
-        padding:5% 8%;
+        padding:8%;
         @media screen and (max-width: 768px){
             text-align: center;
         }
