@@ -1,10 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
+import {onFormSubmit} from '../../../api/onFormSubmit.js';
 
-const SectionTitle = styled.h3`
-`
-const SectionSubtitle = styled.p`
-`
 const FormWrapper = styled.form`
     display: flex;
     width: 100%;
@@ -18,33 +15,12 @@ const FormWrapper = styled.form`
 `
 const SendButton = styled.button`
 `
-const SectionWrapper = styled.section`
-    padding: 4%;
-    @media screen and (max-width: 768px){
-        width: 75%;
-        margin: auto;
-        line-height: 200%;
-        padding-bottom: 5vh;
-        display: flex;
-        flex-direction: column;
-    }
-`
-const InputWrapper = styled.div`
-    margin: 1.5vw;
-`
 
-function SignUpForm({onFormSubmit}){
+const SignUpForm = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     return(
-        <>
-        <SectionWrapper>
-            <SectionTitle>Are you a parent without a nanny and looking to share?</SectionTitle>
-            <SectionSubtitle>
-                Leave us your name and email and we'll update you as soon as 
-                a share becomes available in your area!
-            </SectionSubtitle>
-            <FormWrapper
+        <FormWrapper
             onSubmit={(e)=>{
                 e.preventDefault();
                 onFormSubmit({name, email});
@@ -77,9 +53,6 @@ function SignUpForm({onFormSubmit}){
                     Send
                 </SendButton>
             </FormWrapper>
-        </SectionWrapper>
-        </>
     )
 }
-
 export default SignUpForm;
