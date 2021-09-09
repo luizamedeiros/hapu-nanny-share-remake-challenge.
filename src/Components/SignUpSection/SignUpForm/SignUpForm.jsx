@@ -23,7 +23,7 @@ const SignUpForm = () => {
         <FormWrapper
             onSubmit={(e)=>{
                 e.preventDefault();
-                onFormSubmit({name, email});
+                onFormSubmit({'name': name, 'email': email});
             }}
             >
             <input

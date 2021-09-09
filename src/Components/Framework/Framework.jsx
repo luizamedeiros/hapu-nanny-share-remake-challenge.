@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ImageSec4 from '../../assets/images/ImageSection4.png';
 
 const SectionWrapper = styled.section``
-const TextSection = styled.div``
+const TextDiv = styled.div``
 const SectionTitle = styled.h2``
 const SectionSubtitle = styled.p`
     width: 55%;
@@ -25,7 +25,7 @@ const SectionImage = styled.img`
 const Framework = () => {
     return(
         <SectionWrapper>
-            <TextSection>
+            <TextDiv>
                 <SectionTitle>A framework built for the long term</SectionTitle>
                 <SectionSubtitle>
                     Childcare is for the long term. 
@@ -37,7 +37,7 @@ const Framework = () => {
                 </SectionSubtitle>
                 <SectionLink href="#">Read how Hapu’s tribal background defines our app </SectionLink>
                 <SectionImage src={ImageSec4}/>
-            </TextSection>
+            </TextDiv>
         </SectionWrapper>
     )
 }
