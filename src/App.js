@@ -7,6 +7,8 @@ import SectionDiv from './Components/SectionDiv';
 import PaymentSection from './Components/PaymentSection';
 import Framework from './Components/Framework';
 import NannyDiary from './Components/NannyDiary';
+import {validateEmail} from './models/SignUp.js';
+import ValidateInput from './contexts/ValidateInput';
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
       <FirstSection />
       <SecondSection />
       <SectionDiv/>
-      <SignUpSection/>
+      <ValidateInput.Provider value = {validateEmail}>
+        <SignUpSection/>
+      </ValidateInput.Provider>
       <SectionDiv/>
       <PaymentSection/>
       <SectionDiv/>
