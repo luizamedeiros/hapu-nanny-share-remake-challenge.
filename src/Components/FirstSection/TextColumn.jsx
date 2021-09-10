@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import Demonstration from './Demonstration.jsx';
+import { Experiment, Variant } from "@marvelapp/react-ab-test";
 
 const MainTitle = styled.h1`
     display:flex;
     letter-spacing: 1px;
-    text-align: justify;
+    text-align: start;
     padding-top: 0.5vh;
     color:inherit;
     @media screen and (max-width: 768px){
@@ -42,9 +43,25 @@ const TextDiv = styled.div`
 const TextColumn = () =>{
     return(
         <TextDiv>
-            <MainTitle>Easily create or join a local nanny share with Hapu</MainTitle>
-            <Subtitle>Hapu is Airbnb for nanny share. Share your home, nanny and costs and create new flexible, affordable solutions in childcare.</Subtitle>
+            <Experiment name="Landing page test">
+                <Variant name="Design version">
+                    <MainTitle>Easily create or join a local nanny share with Hapu</MainTitle>
+                    <Subtitle>
+                        Hapu is Airbnb for nanny share. 
+                        Share your home, nanny and costs and create new flexible, 
+                        affordable solutions in childcare.
+                    </Subtitle>
+                </Variant>
+                <Variant name = "Alternate version">
+                    <MainTitle>Create the childcare you need at a price you can afford</MainTitle>
+                    <Subtitle>
+                        Connect with other local families to share a nanny from as low as $10.00/hr each. 
+                        Create your family profile today to get started.
+                    </Subtitle>
+                </Variant>
+            </Experiment>
             <Demonstration/>
+            
         </TextDiv>
     );
 }

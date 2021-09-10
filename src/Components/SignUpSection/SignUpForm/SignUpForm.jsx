@@ -56,21 +56,21 @@ const SignUpForm = () => {
                 label="Your name"
                 required/>
 
-                <input
-                value={email}
-                onChange={(e)=>{
-                    setEmail(e.target.value);
-                    validateInput(e);
-                }} 
-                id="email"
-                name="email"
-                type="email"
-                variant="filled"
-                label="Your email"
-                required/>
-                <SendButton>
-                    Send
-                </SendButton>
+            <input
+            value={email}
+            onChange={(e)=>{
+                setEmail(e.target.value);
+                validateInput(e);
+            }} 
+            id="email"
+            name="email"
+            type="email"
+            variant="filled"
+            label="Your email"
+            required/>
+            <SendButton>
+                Send
+            </SendButton>
             </FormWrapper>
     )
 }
