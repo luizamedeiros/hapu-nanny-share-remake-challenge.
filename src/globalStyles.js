@@ -2,13 +2,13 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
     h1, h2, h3, h4, h5, h6, p, a{
-        font-family: 'Inter', sans-serif;
-        src: url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
         color: #3D3D3D;;
+        font-family: 'Inter', sans-serif;
         font-weight: 500;
-        text-align: inherit;
-        margin-top: 1.46vw;
         margin-bottom: 1.46vw;
+        margin-top: 1.46vw;
+        src: url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+        text-align: inherit;
         @media screen and (max-width: 768px){
             margin-top: 0.7vw;
             margin-bottom: 0.7vw;
@@ -49,8 +49,8 @@ const GlobalStyle = createGlobalStyle`
     p{
         font-size: 1.17vw;
         font-weight: 400;
-        text-align: inherit;
         line-height: 4.4vh;
+        text-align: inherit;
         @media screen and (max-width: 768px){
             font-size: 3vw;
             line-height: 200%;
@@ -58,9 +58,9 @@ const GlobalStyle = createGlobalStyle`
         }
     }
     a{
-        text-decoration: underline;
         color: #5E20A4;
         font-size: 1.17vw;
+        text-decoration: underline;
         @media screen and (max-width: 768px){
             font-size: 3vw;
         }
@@ -71,11 +71,11 @@ const GlobalStyle = createGlobalStyle`
         background-size: cover;
     }
     button{
-        padding: 15px;
         background: #00A870;
         border-radius: 4px;
         border-style: none;
         color: white;
+        padding: 15px;
         text-decoration: none;
         &:hover{
             cursor: pointer;
@@ -100,13 +100,13 @@ const GlobalStyle = createGlobalStyle`
         }
     }
     ul{
-        list-style: none;
+        align-items: center;
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
-        align-items: center;
+        list-style: none;
         margin: 0;
         padding: 1%;
+        width: 100%;
     }
     nav{
         display: flex;

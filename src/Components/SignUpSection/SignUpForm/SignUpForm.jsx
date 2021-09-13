@@ -1,35 +1,7 @@
 import React, {useState, useContext} from 'react';
-import styled from 'styled-components';
 import {onFormSubmit} from '../../../api/onFormSubmit.js';
 import ValidateInput from '../../../contexts/ValidateInput.js';
-
-const FormWrapper = styled.form`
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    @media screen and (max-width: 768px){
-        flex-direction: column;
-        align-content: center;
-        flex-wrap: wrap;
-    }
-`
-const Input = styled.input`
-    width: 16.98vw;
-    height: 48px;
-    margin: 0.8vw;
-    border: 1px solid #DFDFDF;
-    @media screen and (max-width: 768px){
-        width: 91%;
-    }
-`
-const SendButton = styled.button`
-    height: 48px;
-    padding: 1%  2%;
-    @media screen and (max-width: 768px){
-        width: 91%;
-    }
-`
+import { FormWrapper, Input, SendButton } from './SignUpFormStyle.js';
 
 const SignUpForm = () => {
     const [name, setName] = useState("");

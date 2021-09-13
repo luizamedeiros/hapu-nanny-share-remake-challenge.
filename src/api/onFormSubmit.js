@@ -1,5 +1,4 @@
 export function onFormSubmit(userData){
-  console.log(userData)
     const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -7,7 +6,6 @@ export function onFormSubmit(userData){
   };
   fetch('https://api.jungledevs.com/api/v1/challenge-newsletter/', requestOptions)
       .then(response => {
-        console.log(response);
         let status = response['status']
         if (status >= 200 && status<300){
           window.alert("Yay! You're one step closer to sharing!")

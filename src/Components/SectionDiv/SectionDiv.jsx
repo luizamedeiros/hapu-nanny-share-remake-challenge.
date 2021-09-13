@@ -1,12 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const SectionDivider = styled.hr`
-`
 
 const SectionDiv=()=>{
     return(
-        <SectionDivider/>
+        <hr/>
     )
 }
 export default SectionDiv;

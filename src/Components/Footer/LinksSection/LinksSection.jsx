@@ -1,31 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+import {Links, Link, Item} from './LinksSectionStyle';
 
-const Links = styled.div`
-    display: flex;
-    justify-content: center;
-    width: 33%;
-    @media screen and (max-width: 768px){
-        width: 60%;
-        padding: 2%;
-        margin: auto;
-        flex-wrap: wrap;
-    }
-`
-const Link = styled.li`
-    margin: auto 2.2%;
-    @media screen and (max-width: 768px){
-        flex: 40%;
-        padding: 1%;
-        margin-top: 5%;
-    }
-    
-    
-`
-const Item = styled.a`
-    text-decoration: none;
-    color: black;
-`
 const LinksSection = ()=>{
      return(
     <Links>

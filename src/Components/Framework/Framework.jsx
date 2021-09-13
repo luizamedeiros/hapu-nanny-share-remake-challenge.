@@ -1,33 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
 import ImageSec4 from '../../assets/images/ImageSection4.png';
+import {SectionSubtitle, SectionImage} from './FrameworkStyle';
 
-const SectionWrapper = styled.section``
-const TextDiv = styled.div``
-const SectionTitle = styled.h2``
-const SectionSubtitle = styled.p`
-    width: 55%;
-    margin: auto;
-    margin-bottom: 1.46vw;
-    @media screen and (max-width: 768px){
-        text-align: inherit;
-        width: 75%;
-        margin: auto;
-    }
-`
-const SectionLink = styled.a``
-const SectionImage = styled.img`
-    margin-top: 6.9vh;
-    height: 55vh;
-    @media screen and (max-width: 768px){
-        display:none;
-    }
-`
 const Framework = () => {
     return(
-        <SectionWrapper>
-            <TextDiv>
-                <SectionTitle>A framework built for the long term</SectionTitle>
+        <section>
+            <div>
+                <h2>A framework built for the long term</h2>
                 <SectionSubtitle>
                     Childcare is for the long term. 
                     And you need a framework you can count on that gives 
@@ -36,10 +15,10 @@ const Framework = () => {
                     clearly defined process, 
                     transparency over money and equality of participation.
                 </SectionSubtitle>
-                <SectionLink href="#">Read how Hapu’s tribal background defines our app </SectionLink>
+                <a href="#">Read how Hapu’s tribal background defines our app </a>
                 <SectionImage src={ImageSec4}/>
-            </TextDiv>
-        </SectionWrapper>
+            </div>
+        </section>
     )
 }
 export default Framework;
