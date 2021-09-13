@@ -25,6 +25,14 @@ export const SitterHours = styled.h4`
     color: black;
     font-weight: 525;
     @media screen and (max-width: 768px){
-        font-size: 3vw;
+        font-size: 2.7vw;
         padding-bottom: 0;
+`
+
+export const SitterLink = styled.a`
+    @media screen and (max-width: 768px){
+        width: 60%;
+        font-size: 3vw;
+        line-height: 4.77vh;
+    }
 `
