@@ -4,7 +4,9 @@ export const SectionTitle = styled.h3`
     padding-top: 1.46vw;
     text-align: center;
     @media screen and (max-width: 768px){
-        font-size: 5.6vw;
+        font-size: 4.6vw;
+        width: 75%;
+        margin: auto;
     }
 `
 export const SectionSubtitle = styled.p`
