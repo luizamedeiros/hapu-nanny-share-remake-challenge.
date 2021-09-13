@@ -14,6 +14,22 @@ const FormWrapper = styled.form`
         flex-wrap: wrap;
     }
 `
+const Input = styled.input`
+    width: 16.98vw;
+    height: 48px;
+    margin: 0.8vw;
+    border: 1px solid #DFDFDF;
+    @media screen and (max-width: 768px){
+        width: 91%;
+    }
+`
+const SendButton = styled.button`
+    height: 48px;
+    padding: 1%  2%;
+    @media screen and (max-width: 768px){
+        width: 91%;
+    }
+`
 
 const SignUpForm = () => {
     const [name, setName] = useState("");
@@ -43,7 +59,7 @@ const SignUpForm = () => {
                 handleSubmit();
             }}
             >
-            <input
+            <Input
                 value={name}
                 onChange={(e)=>{
                     setName(e.target.value);
@@ -52,10 +68,10 @@ const SignUpForm = () => {
                 name="name"
                 type="text"
                 variant="filled"
-                label="Your name"
+                placeholder={"Your name"}
                 required/>
 
-            <input
+            <Input
             value={email}
             onChange={(e)=>{
                 setEmail(e.target.value);
@@ -65,11 +81,11 @@ const SignUpForm = () => {
             name="email"
             type="email"
             variant="filled"
-            label="Your email"
+            placeholder="Your email"
             required/>
-            <button>
+            <SendButton>
                 Send
-            </button>
+            </SendButton>
             </FormWrapper>
     )
 }

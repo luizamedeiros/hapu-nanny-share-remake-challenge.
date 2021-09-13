@@ -8,30 +8,36 @@ const Socials = styled.div`
     display: flex;
     width: 33%;
     justify-content: center;
+    background: white;
     @media screen and (max-width: 768px){
         width: 100%;
-        margin: auto;
     }
 `
 const SocialMedia = styled.li`
     border: 1px solid #DFDFDF;
     border-radius: 100%;
     padding: 3px;
-    text-align: center;
     width: 5.5vh;
     height: 5.5vh;
     margin: 1.17vw;
+    @media screen and (max-width: 768px){
+        width: 8.5vh;
+        height: 8.5vh;
+    }
 `
 const Img = styled.img`
     padding: 5px;
+    @media screen and (max-width: 768px){
+        padding: 2.8vw;
+    }
 `
 
 const SocialsSection = ()=>{
     return(
         <Socials>
-            <SocialMedia><a><Img src={Facebook}/></a></SocialMedia>
-            <SocialMedia><a><Img src={Twitter}/></a></SocialMedia>
-            <SocialMedia><a><Img src={Instagram}/></a></SocialMedia>
+            <SocialMedia><a href="#"><Img src={Facebook}/></a></SocialMedia>
+            <SocialMedia><a href="#"><Img src={Twitter}/></a></SocialMedia>
+            <SocialMedia><a href="#"><Img src={Instagram}/></a></SocialMedia>
         </Socials>
     )
 }

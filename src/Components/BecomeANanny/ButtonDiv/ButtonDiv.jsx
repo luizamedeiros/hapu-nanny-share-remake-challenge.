@@ -33,7 +33,7 @@ const ButtonImage = styled.img`
     }
 `
 const ButtonText = styled.div`
-    padding: 7px;
+    padding-top: 7px;
     display: flex;
     flex-direction: column;
     margin-left: 0.1vw;

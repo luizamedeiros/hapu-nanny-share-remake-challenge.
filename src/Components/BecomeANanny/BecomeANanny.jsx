@@ -5,6 +5,7 @@ import Button from './ButtonDiv';
 const SectionWrapper = styled.section`
     background-color: white;
     padding-top: 12.59vh;
+    padding-bottom: 6vh;
 `
 const SectionTitle = styled.h2``
 const SectionSubtitle = styled.p``

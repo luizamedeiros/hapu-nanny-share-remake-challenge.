@@ -9,7 +9,6 @@ const SectionTitle = styled.h3`
     text-align: center;
     @media screen and (max-width: 768px){
         font-size: 5.6vw;
-        line-height: 7vh;
     }
 `
 const SectionSubtitle = styled.p`

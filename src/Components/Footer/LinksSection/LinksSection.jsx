@@ -6,13 +6,21 @@ const Links = styled.div`
     justify-content: center;
     width: 33%;
     @media screen and (max-width: 768px){
-        width: 70%;
+        width: 60%;
         padding: 2%;
         margin: auto;
+        flex-wrap: wrap;
     }
 `
 const Link = styled.li`
     margin: auto 2.2%;
+    @media screen and (max-width: 768px){
+        flex: 40%;
+        padding: 1%;
+        margin-top: 5%;
+    }
+    
+    
 `
 const Item = styled.a`
     text-decoration: none;
@@ -22,7 +30,7 @@ const LinksSection = ()=>{
      return(
     <Links>
         <Link><Item href="#">Share Your Nanny</Item></Link>
-        <Link><Item href="#">Our Story</Item></Link>
+        <Link><Item href="#">Our Story</Item></Link>    
         <Link><Item href="#">Blog</Item></Link>
         <Link><Item href="#"> Terms & Privacy</Item></Link>
     </Links>
