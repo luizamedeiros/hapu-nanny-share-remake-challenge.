@@ -5,7 +5,7 @@ import { Logo, LogoContainer } from './LogoSectionStyle';
 const LogoSection = ()=>{
     return(
     <LogoContainer>
-        <Logo src={fullLogo}/>
+        <Logo src={fullLogo} alt="Hapu Nanny Share logo"/>
     </LogoContainer>
     )
 }

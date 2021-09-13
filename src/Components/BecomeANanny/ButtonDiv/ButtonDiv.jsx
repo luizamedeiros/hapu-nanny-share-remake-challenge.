@@ -6,7 +6,7 @@ import {ButtonDiv, ButtonImage, ButtonText, ButtonTitle, ButtonSubtitle} from '.
 const Button = ()=>{
     return(
     <ButtonDiv>
-        <ButtonImage src = {Calendar}/>
+        <ButtonImage src = {Calendar} alt="Calendar icon"/>
         <ButtonText>
             <ButtonTitle>Create Your Nanny Share</ButtonTitle>
             <ButtonSubtitle>Takes less than 5 minutes</ButtonSubtitle>

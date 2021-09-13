@@ -5,7 +5,7 @@ import { Icon, List, ListItem, HostBtn } from './NavBarStyle';
 const NavBar = () =>{
     return(
         <nav>
-        <Icon src={logo}/>
+        <Icon src={logo} alt="Hapu Nanny Share small logo"/>
             <ul>
                 <List><ListItem href="#">Create Your Nanny Share</ListItem></List>
                 <List><ListItem href="#">Browse Shares</ListItem></List>

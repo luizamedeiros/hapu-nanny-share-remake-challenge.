@@ -6,7 +6,7 @@ const NannyDiary = () => {
     return(
         <section>
             <div>
-                <SectionImage src={ImageSec5}/>
+                <SectionImage src={ImageSec5} alt="decorative illustrations of nanny diary upcoming feature"/>
                 <SectionTitle>Coming soon: Nanny Share Daily Diary!</SectionTitle>
                 <SectionSubtitle>
                 With the Hapu daily diary your nanny will be able to update you 

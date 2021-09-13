@@ -5,7 +5,7 @@ import {SectionWrapper, PaymentImage, TextSection, SectionTitle, SectionSubtitle
 const PaymentSection = () => {
     return(
     <SectionWrapper>
-        <PaymentImage src={ImageSec3}/>
+        <PaymentImage src={ImageSec3} alt="Payment options decorative image. Selectable option for choosing a flat amount or a shared rate."/>
         <TextSection>
             <SectionTitle>Shared payments made simple</SectionTitle>
             <SectionSubtitle>

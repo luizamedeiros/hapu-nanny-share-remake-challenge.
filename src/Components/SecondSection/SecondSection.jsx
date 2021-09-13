@@ -16,7 +16,7 @@ const SecondSection = () =>{
                 </SectionPitch>
                 <ReadyToStartLink href="#">Ready to get started?</ReadyToStartLink>
             </TextSection>
-            <StartImage src={imageSec1}/>
+            <StartImage src={imageSec1} alt="Example image of Hapu Nanny Share platform, showing a Nanny's weekly recurring fee, timetable, and rates."/>
         </SectionWrapper>
     );
 } 

@@ -16,7 +16,7 @@ const Framework = () => {
                     transparency over money and equality of participation.
                 </SectionSubtitle>
                 <a href="#">Read how Hapu’s tribal background defines our app </a>
-                <SectionImage src={ImageSec4}/>
+                <SectionImage src={ImageSec4} alt="Image of user billing history"/>
             </div>
         </section>
     )

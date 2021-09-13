@@ -7,9 +7,9 @@ import { Socials, SocialMedia, Img } from './SocialsSectionStyle';
 const SocialsSection = ()=>{
     return(
         <Socials>
-            <SocialMedia><a href="#"><Img src={Facebook}/></a></SocialMedia>
-            <SocialMedia><a href="#"><Img src={Twitter}/></a></SocialMedia>
-            <SocialMedia><a href="#"><Img src={Instagram}/></a></SocialMedia>
+            <SocialMedia><a href="#"><Img src={Facebook} alt="Facebook logo"/></a></SocialMedia>
+            <SocialMedia><a href="#"><Img src={Twitter} alt="Twitter logo"/></a></SocialMedia>
+            <SocialMedia><a href="#"><Img src={Instagram} alt="instagram logo"/></a></SocialMedia>
         </Socials>
     )
 }

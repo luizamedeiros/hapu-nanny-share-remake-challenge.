@@ -8,11 +8,11 @@ import {Banner, MainDiv, HeaderImage} from './FirstSectionStyle';
 const FirstSection = () =>{
     return(
         <>
-        <Banner>
+        <Banner alt="Photograph of family in kitchen ">
             <NavBar/>
             <MainDiv>      
                 <TextColumn/>
-                <HeaderImage src = {imageheader}/>
+                <HeaderImage src = {imageheader} alt="Illustration of nanny share notification, showing a succesful match between nanny and family."/>
             </MainDiv>
         </Banner>
         <AvailableSitter/>
