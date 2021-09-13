@@ -14,8 +14,7 @@ const FormWrapper = styled.form`
         flex-wrap: wrap;
     }
 `
-const SendButton = styled.button`
-`
+
 const SignUpForm = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -68,9 +67,9 @@ const SignUpForm = () => {
             variant="filled"
             label="Your email"
             required/>
-            <SendButton>
+            <button>
                 Send
-            </SendButton>
+            </button>
             </FormWrapper>
     )
 }

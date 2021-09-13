@@ -8,6 +8,7 @@ const SectionTitle = styled.h2``
 const SectionSubtitle = styled.p`
     width: 55%;
     margin: auto;
+    margin-bottom: 1.46vw;
     @media screen and (max-width: 768px){
         text-align: inherit;
         width: 75%;

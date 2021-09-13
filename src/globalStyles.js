@@ -99,5 +99,21 @@ const GlobalStyle = createGlobalStyle`
             margin-bottom: 5%;
         }
     }
+    ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        margin: 0;
+        padding: 1%;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        @media screen and (max-width: 768px){
+            margin-bottom: 10vh;
+        }
+    }
 `
 export default GlobalStyle;

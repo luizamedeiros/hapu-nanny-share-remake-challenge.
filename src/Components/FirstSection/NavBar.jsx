@@ -3,29 +3,21 @@ import logo from '../../assets/images/logo.svg';
 import styled from 'styled-components';
 
     const Icon = styled.img`
-        width: 48px;
-        height: 64px;
-        left: 20px;
-        top: 0px;
+        height: 1.75vw;
+        padding: 2% 0.8% 1.2% 0.8%;
+        margin-left: 1%;
         background: #00C88C;
         border-radius: 0px 0px 32px 32px;
+        @media screen and (max-width: 768px){
+            margin-bottom: 5vh;
+        }
     `
     const Nav = styled.nav`
-        display: flex;
-        width: 100%;
     `
     const UL = styled.ul`
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        align-items: center;
-        margin: 0;
-        padding: 1%;
     `
 
     const List = styled.li`
-        list-style: none;
         padding-left: 2.3vw;
         &:nth-child(3){
             margin-right: 40%;

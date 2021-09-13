@@ -9,24 +9,27 @@ import Framework from './Components/Framework';
 import NannyDiary from './Components/NannyDiary';
 import {validateEmail} from './models/SignUp.js';
 import ValidateInput from './contexts/ValidateInput';
+import BecomeANanny from './Components/BecomeANanny';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <FirstSection />
-      <SecondSection />
-      <SectionDiv/>
-      <ValidateInput.Provider value = {validateEmail}>
-        <SignUpSection/>
-      </ValidateInput.Provider>
-      <SectionDiv/>
-      <PaymentSection/>
-      <SectionDiv/>
-      <Framework/>
-      <SectionDiv/>
-      <NannyDiary/>
-      <SectionDiv/>
+        <FirstSection />
+        <SecondSection />
+        <SectionDiv/>
+        <ValidateInput.Provider value = {validateEmail}>
+          <SignUpSection/>
+        </ValidateInput.Provider>
+        <SectionDiv/>
+        <PaymentSection/>
+        <SectionDiv/>
+        <Framework/>
+        <SectionDiv/>
+        <NannyDiary/>
+        <BecomeANanny/>
+        <Footer/>
     </div>
   );
 }
