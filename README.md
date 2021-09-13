@@ -38,5 +38,12 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
   <li>A/B tests;</li>
   <li>Production builds.</li>
  </ul>
+ 
  ### A/B tests
  When running the app, you may end up seeing one of the two following screens:
+ <ul>
+  <li> This is the <b> original prototype design version. <img src="https://github.com/luizamedeiros/hapu-nanny-share-remake-challenge/blob/main/public/Screenshots/designversion.png"/> </li>
+  </b>
+  <li> This is the <b> alternative version, used for the A/B test. </b> <img src="https://github.com/luizamedeiros/hapu-nanny-share-remake-challenge/blob/main/public/Screenshots/testversion.png"/></li> </ul>
+   <br>
+  <b> Since these screens are persistent for users, once you run the project, there's a chance that the screen you first get is the screen you'll always see! This is done on purpose so that the user always has the most consistent experience possible If for some reason you'd like to see the other screen, all you have to do is clear your browser storage session, and you should be good to go. </b>
