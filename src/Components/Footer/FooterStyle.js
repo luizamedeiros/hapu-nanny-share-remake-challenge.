@@ -16,7 +16,8 @@ export const FooterElements = styled.ul`
 export const Copyright = styled.p`
     color: #3D3D3D;
     font-size: 0.87vw;
-    margin: auto;
+    margin: 6vh auto 0 auto;
+    padding: auto;
     @media screen and (max-width: 768px){
         font-size: 2.2vw;
     }
