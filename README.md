@@ -1,9 +1,9 @@
 # Getting Started with React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). To run it: 
 <ol>
-  <li> First, download and unzip the project, or run a `git clone` on the repository. </li>
-  <li> Once you have the project locally, you'll have to do a `npm install` or `yarn install`, in the project directory.</li>
+  <li> First, download and unzip the project, or run a <b> git clone </b> on the repository. </li>
+  <li> Once you have the project locally, you'll have to do a <b> npm install </b> or <b> yarn install</b>, in the project directory.</li>
   <li> After you've installed the necessary modules by following the step above, you can: </li>
   
 ### `yarn start` or `npm start`
