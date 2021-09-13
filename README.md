@@ -46,4 +46,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
   </b>
   <li> This is the <b> alternative version, used for the A/B test. </b> <img src="https://github.com/luizamedeiros/hapu-nanny-share-remake-challenge/blob/main/public/Screenshots/testversion.png"/></li> </ul>
    <br>
-  <b> Since these screens are persistent for users, once you run the project, there's a chance that the screen you first get is the screen you'll always see! This is done on purpose so that the user always has the most consistent experience possible If for some reason you'd like to see the other screen, all you have to do is clear your browser storage session, and you should be good to go. </b>
+  <b> Since these screens are persistent for users, once you run the project, there's a chance that the screen you first get is the screen you'll always see! This is done on purpose so that the user always has the most consistent experience possible. If for some reason you'd like to see the other screen, all you have to do is clear your browser storage session, and you should be good to go. </b>
