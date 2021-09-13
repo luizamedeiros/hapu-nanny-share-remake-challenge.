@@ -6,7 +6,7 @@ export const SectionTitle = styled.h3`
     @media screen and (max-width: 768px){
         font-size: 4.6vw;
         width: 75%;
-        margin: auto;
+        margin: 3.7vh auto 2.5vh auto;
     }
 `
 export const SectionSubtitle = styled.p`
